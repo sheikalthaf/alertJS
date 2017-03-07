@@ -1,0 +1,48 @@
+.alertPositionBtm {
+    display: inline-block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: .3s ease all;
+}
+.alertPositionTop {
+    display: inline-block;
+    position: fixed;
+    top: 65px;
+    right: 15px;
+    transition: .3s ease all;
+}
+.alertA {
+    padding: 0 10px 10px;
+    color: white;
+    width: 300px;
+    margin-top: 10px;
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    text-align: right;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.alertA div{
+    text-align: left;
+}
+.closerr {
+    font-size: 20px;
+    cursor: pointer;
+}
+.infoBg {
+    background: #8a8989;
+}
+.dangBg {
+    background: #af1515;
+}
+
+.succBg {
+    background: #15af4b;
+}
+.closerr:hover {
+    color: red;
+}
+.ani {
+    transform: translateX(315px);
+}

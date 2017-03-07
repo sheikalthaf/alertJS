@@ -8,8 +8,9 @@ alertJS(msg,flg);
 msg: This is for alert message
 flg: denotes the color of the alert
 */
-
-$('body').append('<span class="alertJS alertPositionTop"></span>');
+$(document).ready(function(){
+    $('body').append('<span class="alertJS alertPositionTop"></span>');
+});
 function alertInterval(){
     var interval = setInterval (function(){
         var ci = 0;

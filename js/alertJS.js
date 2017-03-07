@@ -1,4 +1,15 @@
+//This is Developed by Sheik Althaf
+//https://github.com/sheikalthaf/alertJS
 
+/*Use this Function for alert
+
+alertJS(msg,flg);
+
+msg: This is for alert message
+flg: denotes the color of the alert
+*/
+
+$('body').append('<span class="alertJS alertPositionTop"></span>');
 function alertInterval(){
     var interval = setInterval (function(){
         var ci = 0;
@@ -24,13 +35,14 @@ function closeAlert(e){
     }, 400);
 }
 
-function alertJS(e, colr){
+function alertJS(e, colr, dis){
     var t1 = new Date();
     var parent = $('.alertJS');
     var msg = "<div class=\"alertA ani\"><span class=\"closerr\">&times;</span><div>"+e+"</div></div>";
         parent.prepend(msg);
         setTimeout(function() {
-            var NewAlert = parent.find('.alertA:first-child');            
+            var NewAlert = parent.find('.alertA:first-child');
+            if(dis=="s")
             NewAlert.attr("value",t1.getTime());
             if(colr==0){
                 NewAlert.addClass("dangBg")
